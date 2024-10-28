@@ -12,7 +12,7 @@ app.add_middleware(
 )
 
 
-@app.post("/api/publish")
+@app.post("/api/schedule")
 async def create_item(userInput: TestModel):
     return {
         "data": f"{userInput.name}",
